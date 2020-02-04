@@ -1,0 +1,38 @@
+<div class="contactBox">
+	<div class="cTitle">
+		<h1 class="fontMontLight">Contactanos</h1>
+	</div>
+	<div class="contactMiniBox">
+		<div class="contactForm">
+
+			<label class="cLabel fontMontBold" for="cName"><b>Nombre</b></label>
+			<input type="text" class="fontMontLight cInput" [(ngModel)]="cName" name="cName">
+
+			<label class="cLabel fontMontBold" for="cMail"><b>Correo</b></label>
+			<input type="text" class="fontMontLight cInput" [(ngModel)]="cMail" name="cMail">
+
+			<label class="cLabel fontMontBold" for="cContent"><b>Cuentanos mas!</b></label>
+			<textarea class="cInput content fontMontLight" [(ngModel)]="cContent" name="cContent"
+				maxlength="750"></textarea>
+
+			<a href="javascript:void(0);" class="cSubmit fontMontBold" (click)="sendContact()">Enviar</a>
+
+		</div>
+		<div class="contactInfo">
+			<div class="contactSocialBox">
+				<div class="miniBox">
+					<img class="cSocial" src="assets/fIcon.png" alt="Panadoc Facebook">
+					<a class="cTag fontMontBold" target="_blank" href="https://www.facebook.com/"><b>Panadoc</b></a>
+				</div>
+				<div class="miniBox">
+					<img class="cSocial" src="assets/iIcon.png" alt="Panadoc Instagram">
+					<a class="cTag fontMontBold" target="_blank" href="https://www.instagram.com/"><b>@panadoc</b></a>
+				</div>
+				<div class="miniBox">
+					<img class="cSocial" src="assets/mIcon.png" alt="Panadoc Mail">
+					<p class="cTag fontMontBold"><b>info@panadoc.com</b></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

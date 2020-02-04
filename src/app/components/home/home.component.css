@@ -1,0 +1,48 @@
+.bannerBox{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-image: url('/assets/banner1.png');
+  background-size: cover;
+}
+.actionBox{
+  width: 380px;
+  height: 50%;
+  padding: 30px;
+  margin-left: 80px;
+  background-color: white;
+  color: #0084B6;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.actionBox h2{
+  font-size: 36px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.actionBox button{
+  font-size: 15px;
+  text-align: center;
+  height: 60px;
+  width: 72%;
+  background-color: #FF6600;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.actionBox button:active{
+  background: rgba(255, 102, 0, .3);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  }

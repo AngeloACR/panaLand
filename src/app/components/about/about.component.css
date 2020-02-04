@@ -1,0 +1,29 @@
+.aboutImg{
+	position: relative;
+	padding-top: 60px;
+	background-image: url(/assets/about.jpg);
+	background-position: center top; 
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 112%;
+	top: 0;
+	left: 5%;
+	width: 40%;
+}
+
+.aboutCont{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column; 
+	text-align: center;
+	width: 60%;
+	height: 100%;
+}
+
+.aboutBox{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between
+}

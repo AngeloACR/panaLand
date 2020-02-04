@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.box {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.boxA{
+  height: 60%;  
+}
+
+.boxB{
+  height: 77%;
+}
+
+.boxC{
+  height: 95%;
+}
+
+.bgDark {
+  background-color: #0084B6;
+}
+
+.bgLight {
+  background-color: white;
+}
