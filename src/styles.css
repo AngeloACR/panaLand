@@ -16,16 +16,20 @@ body {
 }
 
 .boxA{
-  height: 60%;  
+  height: 72vh;  
 }
 
 .boxB{
-  height: 77%;
+  height: 92vh;
 }
 
 .boxC{
-  height: 95%;
+  height: 50vh;
 }
+
+/* .footerBox{
+  height: 10vh;
+} */
 
 .bgDark {
   background-color: #0084B6;

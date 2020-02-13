@@ -46,6 +46,14 @@
   border-style: solid;
   border-width: 3px;
   border-color: #0084b6;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.navElement2:hover {
+  color: #0084b6;
+  background-color: white;
 }
 
 .navElement2:active {
@@ -54,16 +62,20 @@
   }
 
 .navElement a{
-	color: white;
+	color: #0084b6;
 	font-size: 15px;
   text-decoration: none !important;
 }
 
 .navElement2 a{
 	color: white;
-	font-size: 23px;
+	font-size: 16px;
 	text-decoration: none !important;
   }
+  
+  .navElement2:hover a{
+    color: #0084b6;
+    }
   
 
 .navElement a:active {

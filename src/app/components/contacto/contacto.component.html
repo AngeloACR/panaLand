@@ -1,38 +1,84 @@
 <div class="contactBox">
-	<div class="cTitle">
-		<h1 class="fontMontLight">Contactanos</h1>
-	</div>
-	<div class="contactMiniBox">
-		<div class="contactForm">
+  <div class="cTitle">
+    <h1 class="fontMontLight">Contáctanos</h1>
+  </div>
 
-			<label class="cLabel fontMontBold" for="cName"><b>Nombre</b></label>
-			<input type="text" class="fontMontLight cInput" [(ngModel)]="cName" name="cName">
+  <div class="contactMiniBox">
+    <div class="contactForm">
+      <form [formGroup]="contactForm" (ngSubmit)="sendContact()">
+        <label class="cLabel fontMontBold" for="cName"><b>Nombre:</b></label>
+        <input
+          type="text"
+          class="fontMontLight cInput"
+          formControlName="cName"
+          name="cName"
+        />
 
-			<label class="cLabel fontMontBold" for="cMail"><b>Correo</b></label>
-			<input type="text" class="fontMontLight cInput" [(ngModel)]="cMail" name="cMail">
+        <label class="cLabel fontMontBold" for="cMail"><b>Correo:</b></label>
+        <input
+          type="text"
+          class="fontMontLight cInput"
+          formControlName="cMail"
+          name="cMail"
+        />
 
-			<label class="cLabel fontMontBold" for="cContent"><b>Cuentanos mas!</b></label>
-			<textarea class="cInput content fontMontLight" [(ngModel)]="cContent" name="cContent"
-				maxlength="750"></textarea>
+        <label class="cLabel fontMontBold" for="cContent"
+          ><b>Mensaje:</b></label
+        >
+        <textarea
+          class="cInput content fontMontLight"
+          formControlName="cContent"
+          name="cContent"
+          maxlength="750"
+        ></textarea>
 
-			<a href="javascript:void(0);" class="cSubmit fontMontBold" (click)="sendContact()">Enviar</a>
-
-		</div>
-		<div class="contactInfo">
-			<div class="contactSocialBox">
-				<div class="miniBox">
-					<img class="cSocial" src="assets/fIcon.png" alt="Panadoc Facebook">
-					<a class="cTag fontMontBold" target="_blank" href="https://www.facebook.com/"><b>Panadoc</b></a>
-				</div>
-				<div class="miniBox">
-					<img class="cSocial" src="assets/iIcon.png" alt="Panadoc Instagram">
-					<a class="cTag fontMontBold" target="_blank" href="https://www.instagram.com/"><b>@panadoc</b></a>
-				</div>
-				<div class="miniBox">
-					<img class="cSocial" src="assets/mIcon.png" alt="Panadoc Mail">
-					<p class="cTag fontMontBold"><b>info@panadoc.com</b></p>
-				</div>
-			</div>
-		</div>
-	</div>
+        <button
+          class="cSubmit fontMontBold"
+          type="submit"
+          (click)="sendContact()"
+        >
+          Enviar
+        </button>
+      </form>
+    </div>
+    <div class="contactInfo">
+      <div class="contactSocialBox">
+        <div class="followBox">
+          <h2>Síguenos en nuestras redes sociales</h2>
+          <div class="iconsBox">
+            <a target="_blank" href="https://www.facebook.com/">
+              <img
+                class="cSocial"
+                src="assets/fIcon.png"
+                alt="Panadoc Facebook"
+              />
+            </a>
+            <a target="_blank" href="https://www.instagram.com/">
+              <img
+                class="cSocial"
+                src="assets/iIcon.png"
+                alt="Panadoc Instagram"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="infoBox">
+          <h2>Escríbenos</h2>
+          <div class="miniBox">
+            <img class="cSocial" src="assets/mIcon.png" alt="Panadoc Mail" />
+            <p class="cTag fontMontBold"><b>info@panadoc.com</b></p>
+          </div>
+          <h2>Ubícanos</h2>
+          <div class="miniBox">
+            <p class="cTag fontMontBold"></p>
+          </div>
+          <img
+          class="cImgae"
+          src="assets/images/mapa.png"
+          alt="Panadoc Instagram"
+        />
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

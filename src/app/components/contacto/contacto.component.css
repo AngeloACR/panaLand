@@ -20,6 +20,7 @@
 	align-items: center;
 	justify-content: space-around;
 	width: 90%;
+	padding-bottom: 23px;
 }
 
 .contactSocialBox{
@@ -34,18 +35,15 @@
 
 .contactForm{
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: flex-start;
 	flex-direction: column;
-	margin-top: 50px;
 	width: 40%;
-	align-items:center;
-	align-self: flex-start;
+	height: 80%;
 }
 
 .contactInfo{
 	display: flex;
-	margin-top:100px; 
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
@@ -54,7 +52,7 @@
 }
 
 .cLabel{
-	color: #84754D;
+	color: black;
 	margin: 0 0 0 0;
 }
 
@@ -70,10 +68,12 @@
 }
 
 .cSubmit{
+	cursor: pointer;
 	width: 30%;
-	color: #84754D;
+	color: black;
     text-decoration: none !important;
-    text-align: center;	
+	text-align: center;	
+	align-self: center;
 }
 
 .cImg{
@@ -81,8 +81,7 @@
 }
 
 .cTitle{
-	position: absolute;
-	color: #84754D;
+	color: black;
 	width: 85%;
 	padding-top: 50px;
 	height: 100px;
@@ -94,11 +93,27 @@
 	padding-top:5%;
 	display: inline-block;
 	margin: 0 auto;
-	width: 5%;
+	width: 31px;
+	margin-right: 10px;
 }
 
 .cTag{
 	padding-top:1%;
 	display: inline-block;
-	color: #84754D;
+	color: black;
+}
+
+.iconsBox{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.contactForm form{
+	width: 100%;
+}
+
+.cImage{
+	width: 100%;
 }

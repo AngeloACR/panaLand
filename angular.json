@@ -21,7 +21,6 @@
             "assets": [
               "src/favicon.ico",
               "src/assets"
-              "../panaImgs"
             ],
             "styles": [
               "src/styles.css"
