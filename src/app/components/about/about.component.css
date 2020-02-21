@@ -1,34 +1,61 @@
-.aboutImg{
-	position: relative;
-	padding-top: 60px;
-	background-image: url(/assets/about.jpg);
-	background-position: center top; 
-	background-size: contain;
-	background-repeat: no-repeat;
-	height: 112%;
-	top: 0;
-	left: 5%;
-	width: 40%;
+.aboutImg {
+    position: relative;
+    padding-top: 60px;
+    background-image: url(/assets/posts/about.jpg);
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 112%;
+    top: 0;
+    left: 5%;
+    width: 40%;
 }
 
-.aboutCont{
-	color: black;
-	width: 60%;
+.aboutCont {
+    color: black;
+    width: 60%;
 }
 
-.aboutCard{
-	width: 30vw;
-	height: 50%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;	
+.aboutCard {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.aboutBox{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
+.aboutCard img {
+    height: 84%;
+}
+
+.aboutCard p {
+    color: white;
+    font-size: 20px;
+    width: 72%;
+}
+
+.aboutCard h1 {
+    color: white;
+    font-weight: bold;
+}
+
+.aboutBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .aboutCard {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .aboutCard img {
+        width: 100%;
+        height: auto;
+    }
 }

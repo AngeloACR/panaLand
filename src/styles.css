@@ -1,40 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
 .box {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  width: 100%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
 }
 
-.boxA{
-  height: 72vh;  
+.boxA {
+    height: 72vh;
 }
 
-.boxB{
-  height: 92vh;
+.boxB {
+    height: 92vh;
 }
 
-.boxC{
-  height: 50vh;
+.boxC {
+    height: 50vh;
 }
+
 
 /* .footerBox{
   height: 10vh;
 } */
 
 .bgDark {
-  background-color: #0084B6;
+    background-color: #0084b6;
+}
+
+.bgGreen {
+    background-color: #33ba9a;
 }
 
 .bgLight {
-  background-color: white;
+    background-color: #ff6600;
+}
+
+@media only screen and (max-width: 600px) {
+    .boxB {
+        height: auto;
+    }
+    .boxC {
+        height: auto;
+    }
 }
